@@ -6,6 +6,10 @@
     height: 420px;
     border-radius: 10px;
     box-shadow: v.$shadow;
+
+    @media (max-width : 1024px) {
+        width: 100%;
+    }
     
 
     &:hover {
@@ -55,6 +59,10 @@
             display: flex;
             gap: 15px;
             margin-top: 10px;
+
+            @media (max-width : 1200px) {
+                gap:10px;
+            }
 
             & li {
                 color: v.$beige;

@@ -2,11 +2,16 @@ import React from 'react'
 import Field, { FIELD_TYPES } from '../../components/Field/Field'
 
 const Form = () => {
+
+    // const handleSubmit = (event) => {
+    //     event.preventDefault()
+    // }
+
     return (
-        <section className='form__container'>
+        <section className='form__container' id='contact'>
             <h2>Contactez moi !</h2>
             <p>Des questions ? Des projets ? N'hésitez pas à me laisser un message pour pouvoir échanger</p>
-            <form className='form__content'>
+            <form className='form__content' action="https://formsubmit.co/carolopez.dev@gmail.com" method="POST">
                 <div className="row">
                     <div className="col">
                         <Field

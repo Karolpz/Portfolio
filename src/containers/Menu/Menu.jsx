@@ -17,18 +17,22 @@ const Menu = () => {
                 <NavItem
                     icon={AstronautImg}
                     text='A propos de moi'
+                    href='#aboutMe'
                 />
                 <NavItem
                     icon={RocketImg}
                     text='Mes compétences'
+                    href='#skills'
                 />
                 <NavItem
                     icon={GalaxyImg}
                     text='Mes projets'
+                    href='#projects'
                 />
                 <NavItem
                     icon={SatelliteImg}
                     text='Contact'
+                    href='#contact'
                 />
             </div>
         </header>

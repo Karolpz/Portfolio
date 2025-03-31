@@ -17,49 +17,63 @@
         position: relative;
         height: 800px;
 
+        @media (max-width : 1024px) {
+                height: 600px;
+            }
+        @media (max-width : 768px) {
+                height: 300px;
+            }
+
         &--logo {
             position: absolute;
             animation: floating 3s ease-in-out infinite;
 
+            @media (max-width : 1200px) {
+                    width: 150px;
+                }
+            @media (max-width : 768px) {
+                    width: 100px;
+                }
+
             &.html {
                 top: 10%;
-                left: 22%;
+                left: 25%;
                 animation-delay: 0.5s;
             }
 
             &.css {
                 top: 30%;
-                left: 43%;
+                left: 40%;
                 animation-delay: 1s;
             }
 
             &.js {
                 top: 60%;
-                left: 60%;
+                left: 57%;
                 animation-delay: 0.8s;
             }
 
             &.sass {
-                top: 70%;
-                left: 25%;
+                top: 68%;
+                left: 23%;
                 animation-delay: 1.2s;
             }
 
             &.react {
                 top: 15%;
-                left: 70%;
+                left: 67%;
                 animation-delay: 0.4s;
             }
 
             &.redux {
                 top: 40%;
-                left: 5%;
+                left: 3%;
                 animation-delay: 0.9s;
             }
 
             &.github {
-                top: 50%;
-                left: 86%;
+                top: 43%;
+                left: 90%;
             }
         }
     }

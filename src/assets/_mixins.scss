@@ -8,4 +8,15 @@
     margin: 0 v.$margin200;
     border-radius: v.$radius50;
     box-shadow: v.$shadow;
+
+    @media (max-width: 1200px) {
+        margin: 0 v.$margin100;
+    }
+    @media (max-width: 1024px) {
+        margin: 0 v.$margin50;
+    }
+    @media (max-width: 768px) {
+        margin: 0 v.$margin20;
+        padding: 20px;
+    }
 }

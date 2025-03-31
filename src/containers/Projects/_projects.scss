@@ -1,7 +1,17 @@
 @use '../../assets/variables' as v;
 
 .projects {
-    margin: v.$margin50;
+    margin:0 v.$margin50;
+
+    @media (max-width : 1200px) {
+        margin:0 v.$margin20;
+    }
+    @media (max-width : 1024px) {
+        margin:0 v.$margin100;
+    }
+    @media (max-width : 768px) {
+        margin:0 v.$margin50;
+    }
 
     &__title {
         color: v.$beige;
@@ -13,5 +23,13 @@
         gap: 100px;
         justify-content: center;
         margin-top: v.$margin50;
+
+        @media (max-width : 1200px) {
+            gap: 50px;
+        }
+
+        @media (max-width : 1024px) {
+        flex-direction:column;
+        }
     }
 }

@@ -7,10 +7,15 @@
 
     & .navItem__icon img {
         width: 30px;
+
     }
 
     & .navItem__text {
         color: v.$beige;
+
+        @media (max-width : 1024px) {
+            font-size: v.$size16;
+        }
 
         &:hover {
                 opacity: 0.5;

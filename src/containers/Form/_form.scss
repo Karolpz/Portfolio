@@ -7,11 +7,20 @@
 
     & h2 {
         font-size: v.$size36;
+
+        @media (max-width : 768px) {
+            font-size: v.$size30;
+        }
     }
 
     & p {
         font-size: v.$size24;
         margin-top: v.$margin20;
+        text-align: center;
+
+        @media (max-width : 768px) {
+                font-size: v.$size20;
+            }
     }
 
     & .row {
@@ -20,6 +29,10 @@
         align-items: center;
         gap: 20px;
         margin-top: v.$margin20;
+
+        @media (max-width : 1024px) {
+            flex-direction: column;
+        }
     }
 
     & .col {
@@ -32,6 +45,11 @@
         display: flex;
         flex-direction: column; 
         align-items: center;
+        
+
+        @media (max-width : 1024px) {
+                flex-direction: column;
+            }
         
         &--submit {
             font-weight: bold;

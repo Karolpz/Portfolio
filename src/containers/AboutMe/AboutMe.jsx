@@ -4,7 +4,7 @@ import Portrait from '../../assets/images/pictures/portrait-caroline-lopez.jpg'
 
 const AboutMe = () => {
     return (
-        <section className='aboutMe'>
+        <section className='aboutMe'id='aboutMe'>
             <img src={Portrait} alt='Portrait de Caroline Lopez' className="aboutMe__pic" />
             <div className="aboutMe__text">
                 <h1>Caroline Lopez, développeuse front-end junior</h1>
