@@ -2,9 +2,9 @@
 @use '../../assets/mixins' as m;
 
 .aboutMe {
-    @include m.sectionStyle(v.$green);
     justify-content: space-between;
     gap: 70px;
+    @include m.sectionStyle(v.$green);
 
         @media (max-width: 1200px) {
             flex-direction: column;
