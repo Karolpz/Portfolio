@@ -5,7 +5,13 @@
     align-items: flex-end;
     justify-content: space-between;
     color: v.$beige ;
-    margin:v.$margin20;
+    margin:0 v.$margin20;
+
+    @media (max-width: 768px) {
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 10px;
+    }
 
     & .linkRS {
         font-size: v.$size36;

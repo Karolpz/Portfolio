@@ -1,17 +1,11 @@
 @use '../../assets/variables' as v;
 
 .projects {
-    margin:0 v.$margin50;
+    margin: 0 v.$margin50;
 
-    @media (max-width : 1200px) {
-        margin:0 v.$margin20;
-    }
-    @media (max-width : 1024px) {
-        margin:0 v.$margin100;
-    }
     @media (max-width : 768px) {
-        margin:0 v.$margin50;
-    }
+            margin: 0 v.$margin20;
+        }
 
     &__title {
         color: v.$beige;
@@ -29,7 +23,11 @@
         }
 
         @media (max-width : 1024px) {
-        flex-direction:column;
+            flex-direction: column;
+        }
+
+        @media (max-width : 768px) {
+            margin: v.$margin50 0;
         }
     }
 }

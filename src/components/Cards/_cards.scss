@@ -36,7 +36,6 @@
             object-fit: cover;
             border-top-left-radius: 10px;
             border-top-right-radius: 10px;
-            
         }
 
         & p {
@@ -69,7 +68,7 @@
                 background: v.$text-color;
                 padding: 5px 10px;
                 border-radius: 500px;
-                font-size: 18px
+                font-size: v.$size16;
             }
 
         }

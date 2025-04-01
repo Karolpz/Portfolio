@@ -8,6 +8,9 @@
     & .navItem__icon img {
         width: 30px;
 
+        @media (max-width : 768px) {
+                display: none;
+            }
     }
 
     & .navItem__text {
@@ -15,6 +18,9 @@
 
         @media (max-width : 1024px) {
             font-size: v.$size16;
+        }
+        @media (max-width : 768px) {
+            font-size: v.$size14;
         }
 
         &:hover {

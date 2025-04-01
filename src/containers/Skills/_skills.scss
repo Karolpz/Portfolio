@@ -1,83 +1,86 @@
 @use '../../assets/variables' as v;
 
 .skills {
-    margin: v.$margin50;
+    margin: 0 v.$margin50;
+
+    @media (max-width : 768px) {
+        margin:v.$margin20;
+    }
 
     &__title {
         color: v.$beige;
     }
 
     &__img {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: 70px;
         margin-top: v.$margin20;
         width: 100%;
         position: relative;
         height: 800px;
 
         @media (max-width : 1024px) {
-                height: 600px;
-            }
+            height: 600px;
+        }
+
         @media (max-width : 768px) {
-                height: 300px;
-            }
+            height: 250px;
+        }
 
         &--logo {
             position: absolute;
             animation: floating 3s ease-in-out infinite;
 
             @media (max-width : 1200px) {
-                    width: 150px;
-                }
+                width: 150px;
+            }
+
             @media (max-width : 768px) {
-                    width: 100px;
-                }
+                width: 80px;
+            }
 
             &.html {
-                top: 10%;
-                left: 25%;
+                top: 5%;
+                left: 20%;
                 animation-delay: 0.5s;
             }
 
             &.css {
-                top: 30%;
-                left: 40%;
+                top: 35%;
+                left: 33%;
                 animation-delay: 1s;
             }
 
             &.js {
-                top: 60%;
-                left: 57%;
+                top: 77%;
+                left: 53%;
                 animation-delay: 0.8s;
             }
 
             &.sass {
-                top: 68%;
-                left: 23%;
+                top: 74%;
+                left: 10%;
                 animation-delay: 1.2s;
             }
 
             &.react {
                 top: 15%;
-                left: 67%;
+                left: 62%;
                 animation-delay: 0.4s;
             }
 
             &.redux {
                 top: 40%;
-                left: 3%;
+                left: 0;
                 animation-delay: 0.9s;
             }
 
             &.github {
                 top: 43%;
-                left: 90%;
+                left: 80%;
             }
         }
     }
 }
+
 @keyframes floating {
     0% {
         transform: translateY(0);

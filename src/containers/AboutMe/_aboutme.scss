@@ -22,13 +22,12 @@
             margin-bottom: v.$margin20;
         }
 
-        & h2 {
-            font-size: v.$size24;
-            margin-bottom: v.$margin20;
-        }
-
         & p {
             margin-bottom: v.$margin20;
+
+            @media (max-width: 768px) {
+                    font-size: v.$size16;
+                }
         }
 
         & span {

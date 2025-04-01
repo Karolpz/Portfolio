@@ -5,20 +5,16 @@
     justify-content: space-between;
     margin: 0 v.$margin20;
 
-    @media (max-width : 768px) {
-            margin: 0;
-        }
-
     & .logo {
         width: 150px;
 
         @media (max-width : 768px) {
-            width : 100px;
+            width: 80px;
         }
     }
 
     & .navBar {
         display: flex;
-            gap: 20px;
+        gap: 20px;
     }
 }
