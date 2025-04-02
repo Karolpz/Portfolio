@@ -1,0 +1,7 @@
+@use '../assets/variables' as v;
+
+body.light {
+    & .navItem__text, .skills__title, .projects__title, footer {
+        color: v.$text-color;
+    }
+}

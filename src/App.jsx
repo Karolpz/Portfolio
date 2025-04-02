@@ -1,12 +1,15 @@
 import Home from './pages/Home/Home'
-import ParticlesBackground from './Theme/ParticlesBackground'
+import ParticlesBackground from './Background/ParticlesBackground'
+import { ThemeProvider } from './context/ThemeContext'
 
 function App() {
 
   return (
     <>
-      <ParticlesBackground />
-      <Home />
+      <ThemeProvider>
+        <ParticlesBackground />
+        <Home />
+      </ThemeProvider>
     </>
   )
 }

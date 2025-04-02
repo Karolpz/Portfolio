@@ -18,7 +18,7 @@ const Field = ({ label, textlabel, type, id, value, onChange, name, placeholder,
             return (
                 <div className="fieldTextarea">
                     <label htmlFor={label}>{textlabel}</label>
-                    <textarea id={id} name={name} value={value} onChange={onChange} placeholder={placeholder} rows='11'  required />
+                    <textarea id={id} name={name} value={value} onChange={onChange} placeholder={placeholder} rows='11' required />
                 </div>
             );
     }
