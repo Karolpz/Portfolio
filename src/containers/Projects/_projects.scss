@@ -14,9 +14,9 @@
     &__container {
         display: flex;
         flex-wrap: wrap;
-        gap: 100px;
+        gap: 80px;
         justify-content: center;
-        margin-top: v.$margin50;
+        margin: v.$margin50 0;
 
         @media (max-width : 1200px) {
             gap: 50px;

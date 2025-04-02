@@ -5,7 +5,7 @@
     align-items: flex-end;
     justify-content: space-between;
     color: v.$beige ;
-    margin:0 v.$margin20;
+    margin:0 v.$margin20 v.$margin20 v.$margin20;
 
     @media (max-width: 768px) {
         flex-direction: column-reverse;
@@ -20,7 +20,7 @@
     }
 
     & .rocketAnimation {
-        height: 150px;
+        height: 130px;
         cursor: pointer;
     }
 }

@@ -5,6 +5,7 @@
         "description": "Site de recherche d'hébergements",
         "picture": "/website/booki-site.jpg",
         "github": "https://github.com/Karolpz/P3-Booki-OpenClassrooms-Project",
+        "website": "https://karolpz.github.io/P3-Booki-OpenClassrooms-Project/",
         "code" : [
             "HTML",
             "CSS"
@@ -16,6 +17,7 @@
         "description": "Site de réservations de menus de restaurants",
         "picture": "/website/ohmyfood-site.png",
         "github": "https://github.com/Karolpz/P4-OhMyFood",
+        "website": "https://karolpz.github.io/P4-OhMyFood/",
         "code": [
             "HTML",
             "SASS"
@@ -50,6 +52,8 @@
         "description": "Amélioration de la performance, accessibilité et référencement du site",
         "picture": "/website/ninacarducci-site.webp",
         "github": "https://github.com/Karolpz/p8-ninacarducci",
+        "website": "https://karolpz.github.io/p8-ninacarducci/",
+        "audit": "https://googlechrome.github.io/lighthouse/viewer/?gist=9848c0afc98d5dd80d8717e33e7483f0",
         "code": [
             "SEO"
         ]

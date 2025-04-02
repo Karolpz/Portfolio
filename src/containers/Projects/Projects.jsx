@@ -23,6 +23,9 @@ const Projects = () => {
                             </ul>
                         }
                         description={project.description}
+                        github={project.github}
+                        website={project.website}
+                        audit={project.audit}
                     />
                 ))}
 

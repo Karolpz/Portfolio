@@ -6,7 +6,7 @@
     margin: 0 v.$margin20;
 
     & .logo {
-        width: 150px;
+        width: 120px;
 
         @media (max-width : 768px) {
             width: 80px;
@@ -20,6 +20,10 @@
 
         &__theme {
             cursor: pointer;
+
+            &--moon {
+                color: v.$beige;
+            }
         }
     }
 }

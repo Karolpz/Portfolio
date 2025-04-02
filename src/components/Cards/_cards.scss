@@ -2,7 +2,7 @@
 
 .card {
     background: v.$green;
-    width: 25%;
+    width: 27%;
     height: 420px;
     border-radius: 10px;
     box-shadow: v.$shadow;
@@ -10,7 +10,6 @@
     @media (max-width : 1024px) {
         width: 100%;
     }
-    
 
     &:hover {
         transition: transform 0.3s;
@@ -26,10 +25,14 @@
         visibility: visible;
     }
 
+    &:hover a {
+        animation: heartBeat 1s;
+    }
+
     &__picture {
         padding: 10px;
         position: relative;
-        
+
         &--image {
             height: 300px;
             width: 100%;
@@ -52,16 +55,15 @@
     }
 
     &__content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         padding: 10px;
 
         & ul {
             display: flex;
-            gap: 15px;
+            gap: 10px;
             margin-top: 10px;
-
-            @media (max-width : 1200px) {
-                gap:10px;
-            }
 
             & li {
                 color: v.$beige;
@@ -72,5 +74,17 @@
             }
 
         }
+
+        &--link {
+            display: flex;
+            flex-direction: column;
+            text-align: end;
+            gap: 5px;
+            color: v.$text-color;
+            
+                & a:hover {
+                    opacity: 0.7;
+                }
+            }
+        }
     }
-}
