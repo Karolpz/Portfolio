@@ -9,24 +9,26 @@
         width: 30px;
 
         @media (max-width : 768px) {
-                display: none;
-            }
+            display: none;
+        }
     }
 
     & .navItem__text {
         color: v.$beige;
+        text-align: center;
 
         @media (max-width : 1024px) {
             font-size: v.$size16;
         }
+
         @media (max-width : 768px) {
             font-size: v.$size14;
         }
 
         &:hover {
-                opacity: 0.5;
-                cursor: pointer;
-                text-decoration: underline;
-            }
+            opacity: 0.5;
+            cursor: pointer;
+            text-decoration: underline;
+        }
     }
 }
