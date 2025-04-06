@@ -3,7 +3,7 @@
         "id": 1,
         "name": "Booki",
         "description": "Site de recherche d'hébergements",
-        "picture": "/website/booki-site.jpg",
+        "picture": "website/booki-site.jpg",
         "github": "https://github.com/Karolpz/P3-Booki-OpenClassrooms-Project",
         "website": "https://karolpz.github.io/P3-Booki-OpenClassrooms-Project/",
         "code" : [
@@ -15,7 +15,7 @@
         "id": 2,
         "name": "OhMyFood",
         "description": "Site de réservations de menus de restaurants",
-        "picture": "/website/ohmyfood-site.png",
+        "picture": "website/ohmyfood-site.png",
         "github": "https://github.com/Karolpz/P4-OhMyFood",
         "website": "https://karolpz.github.io/P4-OhMyFood/",
         "code": [
@@ -27,7 +27,7 @@
         "id": 3,
         "name": "Sophie Bluel",
         "description": "Portfolio de la photographe Sophie Bluel",
-        "picture": "/website/sophiebluel-site.png",
+        "picture": "website/sophiebluel-site.png",
         "github": "https://github.com/Karolpz/Portfolio-architecte-sophie-bluel",
         "code": [
             "HTML",
@@ -39,7 +39,7 @@
         "id": 4,
         "name": "Kasa",
         "description": "Site de location immobilière entre particuliers",
-        "picture": "/website/kasa-site.png",
+        "picture": "website/kasa-site.png",
         "github": "https://github.com/Karolpz/P7_Kasa",
         "code": [
             "React",
@@ -50,7 +50,7 @@
         "id": 5,
         "name": "Nina Carducci",
         "description": "Amélioration de la performance, accessibilité et référencement du site",
-        "picture": "/website/ninacarducci-site.webp",
+        "picture": "website/ninacarducci-site.webp",
         "github": "https://github.com/Karolpz/p8-ninacarducci",
         "website": "https://karolpz.github.io/p8-ninacarducci/",
         "audit": "https://googlechrome.github.io/lighthouse/viewer/?gist=9848c0afc98d5dd80d8717e33e7483f0",
@@ -62,7 +62,7 @@
         "id": 6,
         "name": "ArgentBank",
         "description": "Site de banque en ligne et gestion de comptes utilisateurs",
-        "picture": "/website/argentbank-site.png",
+        "picture": "website/argentbank-site.png",
         "github": "https://github.com/Karolpz/ArgentBank",
         "code": [
             "React",
