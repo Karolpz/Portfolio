@@ -22,8 +22,8 @@ const Menu = () => {
 
             <div className="navBar">
                 {theme === 'dark' ?
-                    <button className='navBar__theme' onClick={toggleTheme} ><FontAwesomeIcon icon={faMoon} className='navBar__theme--moon'/></button> :
-                    <button className='navBar__theme' onClick={toggleTheme} ><FontAwesomeIcon icon={faSun} className='navBar__theme--sun'/></button>
+                    <button className='navBar__theme' onClick={toggleTheme} aria-label="Mode éclairé" ><FontAwesomeIcon icon={faMoon} className='navBar__theme--moon'/></button> :
+                    <button className='navBar__theme' onClick={toggleTheme} aria-label="Mode sombre" ><FontAwesomeIcon icon={faSun} className='navBar__theme--sun'/></button>
                 }
                 <NavItem
                     icon={AstronautImg}

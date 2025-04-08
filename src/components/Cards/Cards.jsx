@@ -17,16 +17,16 @@ const Cards = ({ siteImg, name, skill, description, github, website, audit }) =>
           <div className="card__content--skill">{skill}</div>
         </div>
         <div className="card__content--link">
-          <a href={github} target="_blank" rel="noopener noreferrer">
+          <a href={github} target="_blank" rel="noopener noreferrer" aria-label="Lien vers le code du site">
             <FontAwesomeIcon icon={faGithub} className='card__content--linkIcon animate__animated animate__heartBeat'/>
           </a>
           {website &&
-            <a href={website} target="_blank" rel="noopener noreferrer">
+            <a href={website} target="_blank" rel="noopener noreferrer" aria-label="lien vers le site">
               <FontAwesomeIcon icon={faGlobe} className='card__content--linkIcon animate__animated animate__heartBeat' />
             </a>
           }
           {audit &&
-            <a href={audit} target="_blank" rel="noopener noreferrer">
+            <a href={audit} target="_blank" rel="noopener noreferrer" aria-label="lien vers l'audit du site">
               <FontAwesomeIcon icon={faChartLine} className='card__content--linkIcon animate__animated animate__heartBeat'  />
             </a>
           }
