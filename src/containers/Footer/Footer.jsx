@@ -8,18 +8,22 @@ import rocketAnimation from '../../data/rocket.json'
 
 const Footer = () => {
 
-    const handleScrollTop = (event) => {
-        event.preventDefault()
-        window.scrollTo({ top: 0, behavior: "smooth" })
-    }
+  const handleScrollTop = (event) => {
+    event.preventDefault()
+    window.scrollTo({ top: 0, behavior: "smooth" })
+  }
   return (
     <footer className='footer'>
-        <div className="linkRS">
-              <FontAwesomeIcon icon = {faGithub} className='linkRS__github' />
-              <FontAwesomeIcon icon={faLinkedin} className='linkRS__linkedin' />
-        </div>
-          <p>© 2025 - Caroline Lopez. Tous droits réservés.</p>
-          <Lottie animationData={rocketAnimation} loop={true} className='rocketAnimation' onClick={handleScrollTop} />
+      <div className="linkRS">
+        <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer">
+          <FontAwesomeIcon icon={faGithub} className='linkRS__github' />
+        </a>
+        <a href='https://www.linkedin.com/in/caroline-l-435a11b5/' target="_blank" rel="noopener noreferrer">
+        <FontAwesomeIcon icon={faLinkedin} className='linkRS__linkedin' />
+        </a>
+      </div>
+      <p>© 2025 - Caroline Lopez. Tous droits réservés.</p>
+      <Lottie animationData={rocketAnimation} loop={true} className='rocketAnimation' onClick={handleScrollTop} />
     </footer>
   )
 }

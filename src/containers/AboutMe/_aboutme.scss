@@ -3,16 +3,16 @@
 
 .aboutMe {
     justify-content: space-between;
-    gap: 70px;
+    gap: 40px;
     @include m.sectionStyle(v.$green);
 
         @media (max-width: 1200px) {
             flex-direction: column;
         }
 
-    &__pic {
-        border-radius: v.$radius50;
-    }
+        &__pic {
+            height: 450px;
+        }
 
     &__text {
         text-align: left;
