@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "Booki",
-        "description": "Site de recherche d'hébergements",
+        "description": "Site de recherche d'hébergements pour des vacances",
         "picture": "website/booki-site.jpg",
         "github": "https://github.com/Karolpz/P3-Booki-OpenClassrooms-Project",
         "website": "https://karolpz.github.io/P3-Booki-OpenClassrooms-Project/",

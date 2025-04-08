@@ -21,7 +21,7 @@
         opacity: 0.5;
     }
 
-    &:hover p {
+    &:hover .card__picture--description {
         visibility: visible;
     }
 
@@ -41,7 +41,7 @@
             border-top-right-radius: 10px;
         }
 
-        & p {
+        &--description   {
             visibility: hidden;
             position: absolute;
             top: 50%;

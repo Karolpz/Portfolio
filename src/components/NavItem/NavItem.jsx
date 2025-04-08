@@ -4,7 +4,7 @@ const NavItem = ({ icon, text, href }) => {
     return (
         <div className='navItem'>
             <div className="navItem__icon">
-                <img src={icon} alt='logo illustrant la barre de navigation' />
+                <img src={icon} alt={`logo de ${text}`} />
             </div>
             <a href={href}>
                 <p className="navItem__text">
