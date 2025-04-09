@@ -1,9 +1,9 @@
-import React, { useState, useRef, useEffect } from 'react'
+import React, { useState, useRef } from 'react'
 import Field, { FIELD_TYPES } from '../../components/Field/Field'
-import emailjs from "emailjs-com";
+import emailjs from "emailjs-com"
+import HCaptcha from '@hcaptcha/react-hcaptcha'
 
 const Form = () => {
-
     const [messageStatus, setMessageStatus] = useState('')
     const [formData, setFormData] = useState({
         prenom: '',
@@ -11,8 +11,9 @@ const Form = () => {
         email: '',
         message: ''
     })
+    const [captchaToken, setCaptchaToken] = useState(null)
     const formReset = useRef()
-    const turnstileRef = useRef()
+    const captchaRef = useRef()
 
     const handleChange = (event) => {
         setFormData({
@@ -22,27 +23,33 @@ const Form = () => {
     }
 
     const handleSubmit = (event) => {
-        emailjs.init('KUgA4JMsoQ82S_jn-')
         event.preventDefault()
-        emailjs.send('service_carolo', 'template_7q7eo65', formData).then(
+
+        if (!captchaToken) {
+            setMessageStatus("Merci de valider le captcha avant d’envoyer.")
+            return
+        }
+
+        const dataToSend = {
+            ...formData,
+            'h-captcha-response': captchaToken
+        }
+
+        emailjs.init('KUgA4JMsoQ82S_jn-')
+
+        emailjs.send('service_carolo', 'template_7q7eo65', dataToSend).then(
             () => {
                 setMessageStatus('Message envoyé avec succès !')
                 formReset.current.reset()
+                setCaptchaToken(null)
+                captchaRef.current.resetCaptcha()
             },
             (error) => {
-                setMessageStatus("Echec lors de l'envoi")
-                console.log('Erreur : ', error);
-            },
-        );
+                setMessageStatus("Échec lors de l’envoi.")
+                console.log('Erreur : ', error)
+            }
+        )
     }
-
-    useEffect(() => {
-        if (window.turnstile && turnstileRef.current) {
-            window.turnstile.render(turnstileRef.current, {
-                sitekey: '0x4AAAAAABHYU9GdtOOSE_AG'
-            });
-        }
-    }, []);
 
     return (
         <section className='form__container' id='contact'>
@@ -90,11 +97,18 @@ const Form = () => {
                         />
                     </div>
                 </div>
-                <div ref={turnstileRef} className="cf-turnstile" />
+
+                <HCaptcha
+                    sitekey="e130d0a2-efe6-484e-8dc4-a57e09286020"
+                    onVerify={setCaptchaToken}
+                    ref={captchaRef}
+                    className='form__content--captcha'
+                />
+
                 <p>{messageStatus}</p>
                 <button type='submit' className='form__content--submit'>Envoyer</button>
             </form>
-        </section >
+        </section>
     )
 }
 
