@@ -82,6 +82,7 @@ const Form = () => {
                         />
                     </div>
                 </div>
+                <div className="cf-turnstile" data-sitekey="0x4AAAAAABHYU9GdtOOSE_AG"></div>
                 <p>{messageStatus}</p>
                 <button type='submit' className='form__content--submit'>Envoyer</button>
             </form>
