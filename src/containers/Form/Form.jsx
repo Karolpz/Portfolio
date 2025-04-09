@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react'
+import React, { useState, useRef, useEffect } from 'react'
 import Field, { FIELD_TYPES } from '../../components/Field/Field'
 import emailjs from "emailjs-com";
 
@@ -12,6 +12,7 @@ const Form = () => {
         message: ''
     })
     const formReset = useRef()
+    const turnstileRef = useRef()
 
     const handleChange = (event) => {
         setFormData({
@@ -33,8 +34,15 @@ const Form = () => {
                 console.log('Erreur : ', error);
             },
         );
-
     }
+
+    useEffect(() => {
+        if (window.turnstile && turnstileRef.current) {
+            window.turnstile.render(turnstileRef.current, {
+                sitekey: '0x4AAAAAABHYU9GdtOOSE_AG'
+            });
+        }
+    }, []);
 
     return (
         <section className='form__container' id='contact'>
@@ -82,7 +90,7 @@ const Form = () => {
                         />
                     </div>
                 </div>
-                <div className="cf-turnstile" data-sitekey="0x4AAAAAABHYU9GdtOOSE_AG"></div>
+                <div ref={turnstileRef} className="cf-turnstile" />
                 <p>{messageStatus}</p>
                 <button type='submit' className='form__content--submit'>Envoyer</button>
             </form>
