@@ -34,13 +34,12 @@
             padding: 10px 20px;
             border-radius: 140px 140px 0 0;
             font-size: 15px;
-            box-shadow: v.$modeshadowrainbow;
+            box-shadow: v.$modeshadownormal;
             border: none;
 
             @media (max-width: 768px) {
                 order: 1;
                 font-size: 10px;
-                box-shadow:  v.$modeshadownormal;
                 border-radius: 50%;
                 padding: 7px;
             }
