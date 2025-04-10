@@ -3,49 +3,49 @@
         "id": 1,
         "name": "HTML",
         "description": "Maîtrise de la structure des pages web",
-        "logo": "skills/html-skill.png",
+        "logo": "skills/html-skill.webp",
         "className": "html"
     },
     {
         "id": 2,
         "name": "CSS",
         "description": "Styliser des pages web avec des feuilles de style",
-        "logo": "skills/css-skill.png",
+        "logo": "skills/css-skill.webp",
         "className": "css"
     },
     {
         "id": 3,
         "name": "JavaScript",
         "description": "Programmation dynamique pour le web",
-        "logo": "skills/js-skill.png",
+        "logo": "skills/js-skill.webp",
         "className": "js"
     },
     {
         "id": 4,
         "name": "Sass",
         "description": "Préprocesseur CSS pour une gestion efficace des styles",
-        "logo": "skills/sass-skill.png",
+        "logo": "skills/sass-skill.webp",
         "className": "sass"
     },
     {
         "id": 5,
         "name": "React",
         "description": "Création d'interfaces utilisateur dynamiques et réactives",
-        "logo": "skills/react-skill.png",
+        "logo": "skills/react-skill.webp",
         "className": "react"
     },
     {
         "id": 6,
         "name": "Redux",
         "description": "Gestion d'état prévisible et centralisée",
-        "logo": "skills/redux-skill.png",
+        "logo": "skills/redux-skill.webp",
         "className": "redux"
     },
     {
         "id": 7,
         "name": "GitHub",
         "description": "Hébergement et gestion du code source avec Git",
-        "logo": "skills/github-skill.png",
+        "logo": "skills/github-skill.webp",
         "className": "github"
     }
 ]
