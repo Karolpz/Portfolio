@@ -6,14 +6,19 @@
     gap: 40px;
     @include m.sectionStyle(v.$green);
 
-        @media (max-width: 1200px) {
-            flex-direction: column;
-        }
+    @media (max-width: 1350px) {
+        flex-direction: column;
+    }
 
-        &__pic {
-            height: 450px;
-            width: auto;
+    &__pic {
+        height: 450px;
+        width: 377px;
+
+        @media (max-width: 768px) {
+            height: 350px;
+            width: 300px;
         }
+    }
 
     &__text {
         text-align: left;
@@ -27,8 +32,8 @@
             margin-bottom: v.$margin20;
 
             @media (max-width: 768px) {
-                    font-size: v.$size16;
-                }
+                font-size: v.$size16;
+            }
         }
 
         & span {
