@@ -1,20 +1,23 @@
-import React from 'react'
+import React, { lazy, Suspense } from 'react'
 import Menu from '../../containers/Menu/Menu'
 import AboutMe from '../../containers/AboutMe/AboutMe'
 import Skills from '../../containers/Skills/Skills'
-import Projects from '../../containers/Projects/Projects'
-import Form from '../../containers/Form/Form'
-import Footer from '../../containers/Footer/Footer'
+const Projects = lazy(() => import('../../containers/Projects/Projects'))
+const Form = lazy(() => import('../../containers/Form/Form'))
+const Footer = lazy(() => import('../../containers/Footer/Footer'))
 
 const Home = () => {
   return (
     <main>
-        <Menu />
-        <AboutMe />
-        <Skills />
+      <Menu />
+      <AboutMe />
+      <Skills />
+
+      <Suspense>
         <Projects />
         <Form />
         <Footer />
+      </Suspense>
     </main>
   )
 }
