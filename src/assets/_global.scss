@@ -12,6 +12,10 @@ body {
     background-color: v.$text-color;
 }
 
+main {
+    min-height: 100vh;
+}
+
 img,
 video {
     max-width: 100%;
