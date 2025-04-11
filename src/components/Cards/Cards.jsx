@@ -8,7 +8,7 @@ const Cards = ({ siteImg, name, skill, description, github, website, audit }) =>
   return (
     <div className="card">
       <div className="card__picture">
-        <img src={siteImg} alt={`aperçu du site ${name}`} className='card__picture--image' />
+        <img src={siteImg} alt={`aperçu du site ${name}`} className='card__picture--image' loading='lazy'/>
         <h2 className="card__picture--description">{description}</h2>
       </div>
       <div className="card__content">
