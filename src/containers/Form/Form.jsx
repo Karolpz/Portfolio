@@ -14,12 +14,17 @@ const Form = () => {
     const [captchaToken, setCaptchaToken] = useState(null)
     const formReset = useRef()
     const captchaRef = useRef()
+    const [showCaptcha, setShowCaptcha] = useState(false)
 
     const handleChange = (event) => {
         setFormData({
             ...formData,
             [event.target.name]: event.target.value
         });
+    }
+
+    const handleFocusForm = () => {
+       if(!showCaptcha) setShowCaptcha(true)
     }
 
     const handleSubmit = (event) => {
@@ -55,7 +60,7 @@ const Form = () => {
         <section className='form__container' id='contact'>
             <h2>Contactez moi !</h2>
             <p>Des questions ? Des projets ? N'hésitez pas à me laisser un message pour pouvoir échanger</p>
-            <form className='form__content' onSubmit={handleSubmit} method="POST" ref={formReset}>
+            <form className='form__content' onSubmit={handleSubmit} method="POST" ref={formReset} onFocus={handleFocusForm}>
                 <div className="row">
                     <div className="col">
                         <Field
@@ -97,13 +102,14 @@ const Form = () => {
                         />
                     </div>
                 </div>
-
-                <HCaptcha
-                    sitekey="e130d0a2-efe6-484e-8dc4-a57e09286020"
-                    onVerify={setCaptchaToken}
-                    ref={captchaRef}
-                    className='form__content--captcha'
-                />
+                {showCaptcha &&
+                    <HCaptcha
+                        sitekey="e130d0a2-efe6-484e-8dc4-a57e09286020"
+                        onVerify={setCaptchaToken}
+                        ref={captchaRef}
+                        className='form__content--captcha'
+                    />
+                }
 
                 <p>{messageStatus}</p>
                 <button type='submit' className='form__content--submit'>Envoyer</button>
