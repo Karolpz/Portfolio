@@ -1,18 +1,17 @@
-import React, { Suspense, lazy } from 'react';
-import Home from './pages/Home/Home';
-import { ThemeProvider } from './context/ThemeContext';
-
-const ParticlesBackground = lazy(() => import('./Background/ParticlesBackground'));
+import Home from './pages/Home/Home'
+import ParticlesBackground from './Background/ParticlesBackground'
+import { ThemeProvider } from './context/ThemeContext'
 
 function App() {
+
   return (
-    <ThemeProvider>
-      <Suspense>
+    <>
+      <ThemeProvider>
         <ParticlesBackground />
-      </Suspense>
-      <Home />
-    </ThemeProvider>
-  );
+        <Home />
+      </ThemeProvider>
+    </>
+  )
 }
 
-export default App;
+export default App
