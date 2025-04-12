@@ -30,7 +30,6 @@
             animation: floating 3s ease-in-out infinite;
             aspect-ratio: 1/1;
             will-change: transform;
-            animation-delay: 2s;
 
             @media (max-width : 1200px) {
                 width: 150px;
