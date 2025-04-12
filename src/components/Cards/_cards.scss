@@ -6,6 +6,7 @@
     height: 420px;
     border-radius: 10px;
     box-shadow: v.$shadow;
+    will-change: transform;
 
     @media (max-width : 1024px) {
         width: 100%;

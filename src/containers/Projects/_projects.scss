@@ -17,6 +17,8 @@
         gap: 80px;
         justify-content: center;
         margin: v.$margin50 0;
+        padding-bottom: 30px;
+        overflow: hidden;
 
         @media (max-width : 1200px) {
             gap: 50px;

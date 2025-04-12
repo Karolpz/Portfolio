@@ -28,6 +28,7 @@
         &--logo {
             position: absolute;
             animation: floating 3s ease-in-out infinite;
+            aspect-ratio: 1/1;
 
             @media (max-width : 1200px) {
                 width: 150px;
