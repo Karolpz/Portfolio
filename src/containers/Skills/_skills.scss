@@ -15,20 +15,22 @@
         margin-top: v.$margin20;
         width: 100%;
         position: relative;
-        height: 800px;
+        height: 910px;
 
         @media (max-width : 1024px) {
-            height: 600px;
+            height: 660px;
         }
 
         @media (max-width : 768px) {
-            height: 250px;
+            height: 300px;
         }
 
         &--logo {
             position: absolute;
             animation: floating 3s ease-in-out infinite;
             aspect-ratio: 1/1;
+            will-change: transform;
+            animation-delay: 2s;
 
             @media (max-width : 1200px) {
                 width: 150px;
