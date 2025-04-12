@@ -14,7 +14,6 @@ function ParticlesBackground() {
 
     return (
         <Particles
-            id="tsparticles"
             init={particlesInit}
             options={theme === 'dark' ? particlesDark : particlesLight}
         />
