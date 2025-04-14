@@ -28,9 +28,7 @@ const Projects = () => {
                         audit={project.audit}
                     />
                 ))}
-
             </div>
-
         </section>
     )
 }
