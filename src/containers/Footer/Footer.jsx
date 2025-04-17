@@ -14,7 +14,7 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
   return (
-    <footer className='footer' itemscope itemtype="https://schema.org/Person">
+    <footer className='footer'>
       <div className="linkRS">
         <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez" itemprop="sameAs">
           <FontAwesomeIcon icon={faGithub} className='linkRS__github' />
@@ -26,7 +26,7 @@ const Footer = () => {
           <img src={Location} alt='Logo de la localisation géographique de Caroline Lopez' />
           <p>
             <span itemprop="addressLocality">Bourgoin-Jallieu</span>,
-            <span itemprop="postalCode">38300</span>
+            <span itemprop="postalCode"> 38300</span>
           </p>
         </div>
       </div>

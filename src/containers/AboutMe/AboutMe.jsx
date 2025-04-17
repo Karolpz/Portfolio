@@ -4,7 +4,7 @@ import Portrait from '../../assets/images/pictures/portrait-caroline-lopez-IA.we
 
 const AboutMe = () => {
     return (
-        <section className='aboutMe' id='aboutMe' itemscope itemtype="https://schema.org/Person">
+        <section className='aboutMe' id='aboutMe' itemprop="about" itemscope itemtype="https://schema.org/Person">
             <img src={Portrait} alt='Portrait de Caroline Lopez' className="aboutMe__pic" itemprop='image' />
             <div className="aboutMe__text">
                 <h1>Bonjour, je suis <span itemprop="name"><span itemprop="givenName">Caroline</span> <span itemprop="familyName">Lopez</span></span>, <span itemprop="jobTitle">développeuse front-end junior</span> près de <span itemprop="homeLocation">Lyon</span>, bienvenue dans mon univers !</h1>
