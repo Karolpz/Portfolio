@@ -14,12 +14,12 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
   return (
-    <footer itemscope itemtype="https://schema.org/Person" className='footer'>
+    <footer className='footer'>
       <div className="linkRS">
-        <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez">
+        <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez" itemprop="sameAs">
           <FontAwesomeIcon icon={faGithub} className='linkRS__github' />
         </a>
-        <a href='https://www.linkedin.com/in/caroline-l-435a11b5/' target="_blank" rel="noopener noreferrer" aria-label="lien vers la linkedin de Caroline Lopez">
+        <a href='https://www.linkedin.com/in/caroline-l-435a11b5/' target="_blank" rel="noopener noreferrer" aria-label="lien vers la linkedin de Caroline Lopez" itemprop="sameAs">
           <FontAwesomeIcon icon={faLinkedin} className='linkRS__linkedin' />
         </a>
         <div className='location'>
