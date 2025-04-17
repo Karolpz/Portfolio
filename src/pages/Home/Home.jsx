@@ -8,7 +8,7 @@ const Footer = lazy(() => import('../../containers/Footer/Footer'))
 
 const Home = () => {
   return (
-    <main itemscope itemtype="https://schema.org/Person">
+    <main>
       <Menu />
       <AboutMe />
       <Skills />

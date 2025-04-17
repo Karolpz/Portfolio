@@ -14,7 +14,7 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
   return (
-    <footer className='footer'>
+    <footer className='footer' itemscope itemtype="https://schema.org/Person">
       <div className="linkRS">
         <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez" itemprop="sameAs">
           <FontAwesomeIcon icon={faGithub} className='linkRS__github' />
