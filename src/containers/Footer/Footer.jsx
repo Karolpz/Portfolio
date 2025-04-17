@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer className='footer' itemScope itemType="https://schema.org/Organization">
       <div className="linkRS">
-        <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez" itemprop="sameAs">
+        <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez" itemprop="url">
           <FontAwesomeIcon icon={faGithub} className='linkRS__github' />
         </a>
         <a href='https://www.linkedin.com/in/caroline-l-435a11b5/' target="_blank" rel="noopener noreferrer" aria-label="lien vers la linkedin de Caroline Lopez" itemprop="sameAs">
@@ -30,7 +30,7 @@ const Footer = () => {
           </p>
         </div>
       </div>
-      <p className='text'>© 2025 - Caroline Lopez. Tous droits réservés.</p>
+      <p className='text'>© 2025 - <span itemprop="name">Caroline Lopez</span>. Tous droits réservés.</p>
       <Lottie animationData={rocketAnimation} loop={true} className='rocketAnimation' onClick={handleScrollTop} />
     </footer>
   )
