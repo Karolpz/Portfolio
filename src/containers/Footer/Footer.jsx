@@ -16,7 +16,7 @@ const Footer = () => {
   return (
     <footer className='footer' itemScope itemType="https://schema.org/Organization">
       <div className="linkRS">
-        <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez" itemprop="url">
+        <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez" itemprop="sameAs">
           <FontAwesomeIcon icon={faGithub} className='linkRS__github' />
         </a>
         <a href='https://www.linkedin.com/in/caroline-l-435a11b5/' target="_blank" rel="noopener noreferrer" aria-label="lien vers la linkedin de Caroline Lopez" itemprop="sameAs">
