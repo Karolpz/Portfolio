@@ -14,15 +14,15 @@ const Footer = () => {
     window.scrollTo({ top: 0, behavior: "smooth" })
   }
   return (
-    <footer className='footer'>
+    <footer className='footer' itemScope itemType="https://schema.org/Organization">
       <div className="linkRS">
-        <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez" itemprop="sameAs">
+        <a href='https://github.com/Karolpz' target="_blank" rel="noopener noreferrer" aria-label="lien vers la page github de Caroline Lopez" itemprop="url">
           <FontAwesomeIcon icon={faGithub} className='linkRS__github' />
         </a>
         <a href='https://www.linkedin.com/in/caroline-l-435a11b5/' target="_blank" rel="noopener noreferrer" aria-label="lien vers la linkedin de Caroline Lopez" itemprop="sameAs">
           <FontAwesomeIcon icon={faLinkedin} className='linkRS__linkedin' />
         </a>
-        <div className='location'>
+        <div className='location' itemScope itemType="https://schema.org/PostalAddress">
           <img src={Location} alt='Logo de la localisation géographique de Caroline Lopez' />
           <p>
             <span itemprop="addressLocality">Bourgoin-Jallieu</span>,
