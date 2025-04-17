@@ -16,15 +16,14 @@ const Menu = () => {
 
     const { theme, toggleTheme } = useContext(ThemeContext);
     return (
-        <header className='menu' itemScope itemType="https://schema.org/Organization">
+        <header className='menu'>
 
-            <a href="https://karolpz.github.io/Portfolio/" itemProp="url">
-                <img src={LogoImg} alt="logo du site de Caroline Lopez" className="logo" />
-            </a>
+            <img src={LogoImg} alt="logo du site de Caroline Lopez" className="logo" />
+
             <div className="navBar">
                 {theme === 'dark' ?
-                    <button className='navBar__theme' onClick={toggleTheme} aria-label="Mode éclairé" ><FontAwesomeIcon icon={faMoon} className='navBar__theme--moon' /></button> :
-                    <button className='navBar__theme' onClick={toggleTheme} aria-label="Mode sombre" ><FontAwesomeIcon icon={faSun} className='navBar__theme--sun' /></button>
+                    <button className='navBar__theme' onClick={toggleTheme} aria-label="Mode éclairé" ><FontAwesomeIcon icon={faMoon} className='navBar__theme--moon'/></button> :
+                    <button className='navBar__theme' onClick={toggleTheme} aria-label="Mode sombre" ><FontAwesomeIcon icon={faSun} className='navBar__theme--sun'/></button>
                 }
                 <NavItem
                     icon={AstronautImg}
