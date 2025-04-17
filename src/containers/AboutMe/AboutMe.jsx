@@ -1,10 +1,10 @@
 import React from 'react'
 
-import Portrait from '../../assets/images/pictures/portrait-caroline-lopez-IA.webp'
+import Portrait from '../../../public/pictures/portrait-caroline-lopez-IA.webp'
 
 const AboutMe = () => {
     return (
-        <section className='aboutMe' id='aboutMe' itemprop="about">
+        <section className='aboutMe'>
             <img src={Portrait} alt='Portrait de Caroline Lopez' className="aboutMe__pic"/>
             <div className="aboutMe__text">
                 <h1>Bonjour, je suis Caroline Lopez, développeuse front-end junior près de Lyon, bienvenue dans mon univers !</h1>
