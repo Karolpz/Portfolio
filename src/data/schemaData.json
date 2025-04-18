@@ -1,0 +1,47 @@
+{
+    "person": {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Caroline Lopez",
+        "url": "https://karolpz.github.io/Portfolio/",
+        "image": "https://karolpz.github.io/Portfolio/pictures/portrait-caroline-lopez-IA.webp",
+        "jobTitle": "Développeuse front-end junior",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Bourgoin-Jallieu",
+            "postalCode": "38300",
+            "addressCountry": "FR"
+        },
+        "sameAs": [
+            "https://github.com/Karolpz",
+            "https://www.linkedin.com/in/caroline-l-435a11b5/"
+        ]
+    },
+    "organization": {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Caroline Lopez",
+        "url": "https://karolpz.github.io/Portfolio/",
+        "logo": "https://karolpz.github.io/Portfolio/pictures/logo-site.webp",
+        "sameAs": [
+            "https://github.com/Karolpz",
+            "https://www.linkedin.com/in/caroline-l-435a11b5/"
+        ]
+    },
+    "website": {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Portfolio de Caroline Lopez",
+        "url": "https://karolpz.github.io/Portfolio/",
+        "description": "Portfolio de Caroline Lopez, développeuse web front-end junior, spécialisée en HTML, CSS, JavaScript et React.",
+        "inLanguage": "fr",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Caroline Lopez",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://karolpz.github.io/Portfolio/pictures/logo-site.webp"
+            }
+        }
+    }
+}

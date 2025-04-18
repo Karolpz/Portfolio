@@ -7,7 +7,7 @@ import AstronautImg from '../../assets/images/logos/astronaut-menu.webp'
 import RocketImg from '../../assets/images/logos/rocket-menu.webp'
 import GalaxyImg from '../../assets/images/logos/galaxy-menu.webp'
 import SatelliteImg from '../../assets/images/logos/satellite-menu.webp'
-import LogoImg from '../../assets/images/logos/logo-site.webp'
+import LogoImg from '../../../public/pictures/logo-site.webp'
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMoon, faSun } from '@fortawesome/free-solid-svg-icons'
