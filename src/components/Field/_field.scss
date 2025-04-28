@@ -1,7 +1,15 @@
+@use '../../assets/variables' as v;
+
 .fieldInput,
 .fieldTextarea {
     display: flex;
     flex-direction: column;
+
+    & label {
+        @media (max-width: 767px) {
+            font-size: v.$size16;
+        }
+    }
 }
 
 .fieldInput input {

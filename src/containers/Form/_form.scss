@@ -5,22 +5,9 @@
     flex-direction: column;
     @include m.sectionStyle(v.$beige);
 
-    & h2 {
-        font-size: v.$size36;
-
-        @media (max-width : 768px) {
-            font-size: v.$size30;
-        }
-    }
-
     & p {
-        font-size: v.$size24;
         margin-top: v.$margin20;
         text-align: center;
-
-        @media (max-width : 768px) {
-            font-size: v.$size20;
-        }
     }
 
     & .row {
@@ -60,6 +47,12 @@
 
             &:hover {
                 opacity: 0.5;
+            }
+        }
+
+        &--message {
+            @media (max-width:768px){
+                font-size: v.$size16;
             }
         }
     }

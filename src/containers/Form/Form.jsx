@@ -110,7 +110,7 @@ const Form = () => {
                         className='form__content--captcha'
                     />
                 }
-                <p>{messageStatus}</p>
+                <p className='form__content--message'>{messageStatus}</p>
                 <button type='submit' className='form__content--submit'>Envoyer</button>
             </form>
         </section>
