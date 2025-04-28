@@ -19,8 +19,8 @@
         text-align: center;
 
         @media (max-width : 768px) {
-                font-size: v.$size20;
-            }
+            font-size: v.$size20;
+        }
     }
 
     & .row {
@@ -41,16 +41,16 @@
         gap: 10px;
     }
 
-    & .form__content{
+    & .form__content {
         display: flex;
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
-        
+
 
         @media (max-width : 1024px) {
-                flex-direction: column;
-            }
-        
+            flex-direction: column;
+        }
+
         &--submit {
             font-weight: bold;
             background: v.$green;

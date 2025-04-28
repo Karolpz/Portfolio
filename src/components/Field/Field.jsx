@@ -1,8 +1,8 @@
 import React from 'react'
 
 export const FIELD_TYPES = {
-    INPUT:1,
-    TEXTAREA:2
+    INPUT: 1,
+    TEXTAREA: 2
 }
 
 const Field = ({ label, textlabel, type, id, value, onChange, name, placeholder, inputType }) => {

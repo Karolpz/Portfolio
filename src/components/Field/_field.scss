@@ -11,6 +11,7 @@
     @media (max-width : 1024px) {
         width: 350px;
     }
+
     @media (max-width : 768px) {
         width: 250px;
     }
@@ -18,9 +19,9 @@
 
 .fieldTextarea textarea {
     width: 350px;
-    padding: 0 5px; 
+    padding: 0 5px;
 
     @media (max-width : 768px) {
-            width: 250px;
-        }
+        width: 250px;
+    }
 }

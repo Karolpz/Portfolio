@@ -5,7 +5,7 @@
     align-items: flex-end;
     justify-content: space-between;
     color: v.$beige ;
-    margin:0 v.$margin20 v.$margin20 v.$margin20;
+    margin: 0 v.$margin20 v.$margin20 v.$margin20;
 
     & .text {
         width: 100%;
@@ -19,7 +19,7 @@
     }
 
     & .linkRS {
-        display:flex ;
+        display: flex;
         align-items: center;
         font-size: v.$size36;
         display: flex;
@@ -50,5 +50,9 @@
         height: 130px;
         cursor: pointer;
         width: 10%;
+
+        @media (max-width: 768px) {
+            width: 30%;
+        }
     }
 }

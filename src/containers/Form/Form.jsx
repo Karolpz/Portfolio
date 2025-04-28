@@ -24,7 +24,7 @@ const Form = () => {
     }
 
     const handleFocusForm = () => {
-       if(!showCaptcha) setShowCaptcha(true)
+        if (!showCaptcha) setShowCaptcha(true)
     }
 
     const handleSubmit = (event) => {
