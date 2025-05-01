@@ -13,7 +13,7 @@ const Home = () => {
       <AboutMe />
       <Skills />
 
-      <Suspense>
+      <Suspense fallback={null}>
         <Projects />
         <Form />
         <Footer />
